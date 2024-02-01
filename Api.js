@@ -5,7 +5,7 @@ const compiler = require("compilex")
 const options = { stats: true }
 compiler.init(options)
 app.use(bodyP.json())
-app.use("/codemirror", express.static("D:/CodeEditor/codemirror"))
+app.use("/codemirror", express.static("https://github.com/codemirror/codemirror5"))
 app.get("/", function (req, res) {
     compiler.flush(function () {
         console.log("deleted")
