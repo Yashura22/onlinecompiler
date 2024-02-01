@@ -10,7 +10,7 @@ app.get("/", function (req, res) {
     compiler.flush(function () {
         console.log("deleted")
     })
-    res.sendFile("D:/CodeEditor/index.html")
+    res.sendFile("https://github.com/Yashura22/onlinecompiler/blob/main/index.html")
 })
 app.post("/compile", function (req, res) {
     var code = req.body.code
